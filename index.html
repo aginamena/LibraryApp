@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel = "stylesheet">
+    <title>Library</title>
+  </head>
+  <body>
+    <button id = "newBook">Add book to library </button>
+    <form>
+      <label for = "title" >Title :  </label>
+      <input type = "text" name = "title"equired>
+      <br>
+      <label for = "nameOfAuthor">nameOfAuthor : </label>
+      <input type = "text" name = "nameOfAuthor" required>
+      <br>
+      <label for = "numPages">Number of pages : </label>
+      <input type = "number" name = "numPages" min = "1" required>
+      <br>
+      <label for = "hasBeenRead">Has been read </label>
+      <input type = "radio" name = "browser" value = "Yes" onclick = "hasBeenRead(this.value)" required>Yes
+      <input type = "radio" name = "browser" value = "No" onclick = "hasBeenRead(this.value)" required>No
+      <br>
+      <button type = "button" id = "submit">Submit</button>
+      <button type = "button" id = "close">Close</button>
+    </form>
+    <div id = "myLibrary">
+      <div id = "title">My Library</div>
+      <div id = "numBooks"># of books in library : 0 </div>
+      <div id = "listOfBooks"></div>
+    </div>
+
+  </body>
+  <script src = "script.js"></script>
+</html>
